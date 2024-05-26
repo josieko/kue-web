@@ -10,7 +10,7 @@
 }
 
 .h1 {
-  background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjRlcnVpMjh5dzg3MndoOXZneWttOGFjd3o2MnV1cWVvdGFqMDdsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Xf2I5odqo0GYepmNpd/giphy-downsized-large.gif);
+  background-image: url("../../public/fruit.jpeg");
   background-size: cover;
   color: rgba(170, 118, 244, 0.04);
   -moz-background-clip: text;

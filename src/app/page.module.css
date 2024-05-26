@@ -12,8 +12,7 @@
   flex-direction: column;
   justify-content: center;
   z-index: 2;
-  padding-top: 180px;
-  padding-bottom: 180px;
+  margin-top: 120px;
 }
 
 .buttonWrap {
