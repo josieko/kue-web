@@ -24,7 +24,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: linear-gradient(0deg, #0f0816 0%, #000000 30%);
+  background: #0a0a0a;
 }
 
 body {

@@ -10,9 +10,10 @@
 }
 
 .h1 {
-  background-image: url("../../public/fruit.jpeg");
+  background-image: url("../../public/fruitFrostRotated.png");
+  background-position: 0% -80%;
   background-size: cover;
-  color: rgba(170, 118, 244, 0.04);
+  color: rgba(125, 119, 132, 0.067);
   -moz-background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;

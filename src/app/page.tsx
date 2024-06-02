@@ -27,8 +27,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      <div
+    <>
+      <main
         className={styles.description}
         style={{ filter: `blur(${blurValue}px)` }}
       >
@@ -36,7 +36,7 @@ export default function Home() {
         <div className={styles.menuFruit}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Spline scene="https://prod.spline.design/5JypQuGG0lIkcwIT/scene.splinecode" />
-            <text className={styles.menuText}>ABOUT</text>
+            <text className={styles.menuText}>About</text>
           </div>
           <div
             style={{
@@ -48,16 +48,16 @@ export default function Home() {
           >
             <Spline scene="https://prod.spline.design/TPpa5eskoSP1Ven5/scene.splinecode" />
             <a href="#listen">
-              <text className={styles.menuText}>LISTEN</text>
+              <text className={styles.menuText}>Listen</text>
             </a>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Spline scene="https://prod.spline.design/Pr31Ej9wVrHQqoC9/scene.splinecode" />
-            <text className={styles.menuText}>BOOK NOW</text>
+            <text className={styles.menuText}>Booking</text>
           </div>
         </div>
-      </div>
+      </main>
       <div className={styles.listenSection}>
         <div
           className={styles.mixCLoudPlayerWrapper}
@@ -83,6 +83,13 @@ export default function Home() {
           </a>
         </div>
       </div>
-    </main>
+      <div className={styles.footerWrapper}>
+        <ul>
+          <li>
+            <text className={styles.footerText}>Made by JosieKo</text>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 }
