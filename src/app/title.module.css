@@ -11,13 +11,13 @@
 
 .h1 {
   background-image: url("../../public/fruitFrostRotated.png");
-  background-position: 0% -80%;
+  background-position: 90% -120%;
   background-size: cover;
   color: rgba(125, 119, 132, 0.067);
   -moz-background-clip: text;
   -webkit-background-clip: text;
   text-transform: uppercase;
-  font-size: 200px;
+  font-size: 220px;
   font-weight: 900;
 }
 

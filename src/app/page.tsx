@@ -6,19 +6,13 @@ import Spline from "@splinetool/react-spline";
 
 export default function Home() {
   const [blurValue, setBlurValue] = useState(0);
-  const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const maxScroll = 300;
-      const blur = Math.min((scrollPosition / maxScroll) * 12, 12);
+      const blur = Math.min((scrollPosition / maxScroll) * 8);
       setBlurValue(blur);
-
-      setIsSticky(
-        scrollPosition >
-          document.querySelector(`.${styles.description}`).offsetHeight + 100
-      );
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,7 +30,7 @@ export default function Home() {
         <div className={styles.menuFruit}>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Spline scene="https://prod.spline.design/5JypQuGG0lIkcwIT/scene.splinecode" />
-            <text className={styles.menuText}>About</text>
+            <text className={styles.menuText}>ABOUT</text>
           </div>
           <div
             style={{
@@ -48,23 +42,18 @@ export default function Home() {
           >
             <Spline scene="https://prod.spline.design/TPpa5eskoSP1Ven5/scene.splinecode" />
             <a href="#listen">
-              <text className={styles.menuText}>Listen</text>
+              <text className={styles.menuText}>LISTEN</text>
             </a>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Spline scene="https://prod.spline.design/Pr31Ej9wVrHQqoC9/scene.splinecode" />
-            <text className={styles.menuText}>Booking</text>
+            <text className={styles.menuText}>BOOKING</text>
           </div>
         </div>
       </main>
       <div className={styles.listenSection}>
-        <div
-          className={styles.mixCLoudPlayerWrapper}
-          style={{
-            position: isSticky ? "fixed" : "static",
-          }}
-        >
+        <div className={styles.mixCLoudPlayerWrapper}>
           <a>
             <iframe
               width="440"
